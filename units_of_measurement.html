@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
     <title>Units of Measurement</title>
 </head>
@@ -14,11 +17,44 @@
             <a href="properties_of_matter.html">Properties of Matter</a>
             <a href="nature_of_energy.html">Nature of Energy</a>
             <a href="units_of_measurement.html">Units of Measurement</a>
+            <a href="citations.html">Citations</a>
         </nav>
     </header>
     <main>
         <p>Accurate measurement using the metric system is fundamental in engineering to ensure design integrity and operational safety.</p>
-        <p>Temperature conversions and density calculations are frequently performed for material and thermal management.</p>
+        <h2>Units of Measurement</h2>
+        <p>Engineers and chemists use standard units (like meters, kilograms, and seconds) to ensure consistency in calculations and designs. For example, understanding the precise measurements of engine components is vital for their proper function.</p>
+        <h2> Temperature conversion</h2>
+        <p>In engine design, converting between Fahrenheit, Celsius, and Kelvin is necessary for understanding material behavior under different temperatures, ensuring components can withstand operational conditions.</p>
+        <h2>Density Calculation</h2>
+        <p>- Knowing the density of materials helps in selecting the right ones for engine parts, balancing strength with weight to optimize performance.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 11.00.09 PM.jpeg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 11.00.08 PM.jpeg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 11.02.10 PM.jpeg" alt="Image 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Enable swiping with mouse for desktop
+            simulateTouch: true,
+            touchRatio: 1,
+        });
+        </script>
     </main>
 </body>
 </html>

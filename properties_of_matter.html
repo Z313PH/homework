@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Properties of Matter</title>
 </head>
 <body>
@@ -14,11 +16,46 @@
             <a href="properties_of_matter.html">Properties of Matter</a>
             <a href="nature_of_energy.html">Nature of Energy</a>
             <a href="units_of_measurement.html">Units of Measurement</a>
+            <a href="citations.html">Citations</a>
         </nav>
     </header>
     <main>
-        <p>Physical vs. Chemical Properties: Important for selecting materials.</p>
-        <p>Extensive vs. Intensive Properties: Crucial for understanding system behaviors.</p>
+        <p>Understanding the properties of materials is essential in mechanical engineering, especially when designing engine components.</p>
+        <h2> 
+            Physical Properties
+        </h2>
+        <p>These include characteristics like density and thermal conductivity, which affect an engine's weight and heat management.</p>
+        <h2>Chemical Properties</h2>
+        <p>These determine how materials react with other substances, such as their resistance to corrosion, which is crucial for engine durability.</p>
+        <h2> Material behavior</h2>
+        <p>Brittle Materials: Strong but prone to sudden failure under stress. Used where compressive strength is important.</p>
+        <p>Ductile Materials: Can bend or stretch without breaking, making them ideal for parts that need to absorb energy or endure deformation.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 10.59.13 PM (1).jpeg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 10.59.13 PM.jpeg" alt="Image 2"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Enable swiping with mouse for desktop
+            simulateTouch: true,
+            touchRatio: 1,
+        });
+        </script>
     </main>
 </body>
 </html>

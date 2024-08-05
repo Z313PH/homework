@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Nature of Energy</title>
 </head>
 <body>
@@ -14,11 +16,48 @@
             <a href="properties_of_matter.html">Properties of Matter</a>
             <a href="nature_of_energy.html">Nature of Energy</a>
             <a href="units_of_measurement.html">Units of Measurement</a>
+            <a href="citations.html">Citations</a>
         </nav>
     </header>
     <main>
-        <p>Understanding energy, work, and heat is crucial in systems like engines and HVAC.</p>
+        <p>Understanding energy is crucial in both mechanical engineering and chemistry, especially in designing systems like car engines.</p>
         <p>Kinetic and Potential Energy play key roles in motion dynamics and energy storage.</p>
+        <h2>Energy</h2>
+        <p>In mechanical engineering, energy is what powers engines. It comes in different forms, like the chemical energy in fuel, which is converted into mechanical work. In chemistry, energy is involved in chemical reactions, such as combustion, which powers engines.</p>
+        <h2>Work and Heat</h2>
+        <p>In mechanical systems, work is done when a force moves an object, like a piston in an engine. Heat is energy transfer due to temperature differences and needs to be managed to prevent engine overheating.</p>
+        <h2>Kinetic Energy</h2>
+        <p>The energy of motion. In engines, moving parts like pistons have kinetic energy, which is crucial for the engine’s operation.</p>
+        <h2>Potential Energy</h2>
+        <p>Stored energy. In fuel, it’s chemical potential energy, which is released during combustion to power the engine.</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src = "/Images/WhatsApp Image 2024-08-03 at 10.59.44 PM.jpeg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 10.59.45 PM.jpeg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="/Images/WhatsApp Image 2024-08-03 at 10.59.45 PM (1).jpeg" alt="Image 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Enable swiping with mouse for desktop
+            simulateTouch: true,
+            touchRatio: 1,
+        });
+        </script>
+        
     </main>
 </body>
 </html>
